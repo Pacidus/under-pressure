@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Amonia Crystal</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="useful.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+      <div style="position:absolute; left:0%; top:0%; height:2cm; width:100%;">
+          <img src="assets/Logo.png" alt="logo Sorbonne"   height="100%" style="position: absolute; left:0%;">
+        </div>
+			<div class="slides">
+				<section data-background-video="assets/bg.mp4" data-background-video-loop data-background-video-muted>
+          <div class="bbox">
+          <h4>High Pressure transition in Ammonia crystal</h4>
+          <h6 style="font-size:2vh;">the terror of knowing what this world is about</h6>
+          <em style="font-size:3vh;">by Nora Lahmiti & Yohan Duarte</em>
+          </div>
+        </section>
+	      <section>
+          <section>
+            <h2>Intro</h2>
+            <div>
+              <div style="float: left;">
+                <img src="assets/Uranus.png" class="figure"/>
+                </br style="height:1vh;">
+                <em class="caption">The ice giant Uranus</em>
+              </div>
+            <div style="float: left; overflow: hidden; width: 10vw; height: 1px;"></div>
+            <div style="float: right;">
+              <img src="assets/Ex_pres.png" class="figure"/>
+              </br style="height:1vh;">
+              <em class="caption">Model of the structure of a ice giant</em>
+            </div>
+          </div>
+          </section>
+        </section>
+        <section>
+				  <section data-background-video="assets/bg.mp4" data-background-video-loop data-background-video-muted>
+            <div class="bbox">
+              <h1>Numerical approach</h1>
+            </div>
+          </section>
+          <section>
+            <h3 style="text-transform: none;">Tools & Techniques</h3>
+            <ul>
+              <li>Solve DFT</li>
+              <li>Molecular dynamic</li>
+              <li>Structural optimization</li>
+            </ul>
+            <div style="float: right;">
+              <img src="assets/qe_logo.png" style="width:20vw; height:auto;" class="figure"/>
+              </br style="height:1vh;">
+              <em class="caption">Quantum Espresso logo</em>
+            </div>
+          </section>
+          <section>
+            <h3 style="text-transform: none;">Choice of the lattice parameter</h3>
+            <div style="float: left;"  >
+              <img src="assets/Phase.png" class="figure"/>
+              </br style="height:1vh;">
+              <em class="caption">Phase diagram</em>
+            </div>
+            <div style="float: right;">
+              <img src="assets/pressure.png" class="figure"/>
+              </br style="height:1vh;">
+              <em class="caption">Evolution of the pressure for a given lattice parameter</em>
+            </div>
+          </section>
+          <section>
+            <h3 style="text-transform: none;">Strategie</h3>
+            <div>
+              <img src="assets/pressure.png" class="figure"/>
+              </br style="height:1vh;">
+              <em class="caption">Evolution of the pressure for a given lattice parameter</em>
+            </div>
+          </section>
+        </section>
+        <section>
+				  <section data-background-video="assets/bg.mp4" data-background-video-loop data-background-video-muted>
+            <div class="bbox">
+              <h1>Results</h1>
+            </div>
+          </section>
+          <section>
+            <h3 style="text-transform: none;">Crystaline phase</h3>
+            <div>
+              <video controls src="assets/cl_dyn_600K.mp4" preload="true" autoplay="autoplay" class="figure"></video>
+              <br>
+              <em class="caption">dynamic at 600K</em>
+            </div>
+          </section>
+
+          <section>
+            <h3 style="text-transform: none;">Plasticity</h3>
+            <div style="float: left;">
+              <img src="assets/transition_pa.png" class="figure"/>
+              <br>
+              <em class="caption">correlation of the orientation</em>
+            </div>
+            <div>
+            </div>
+            <div style="float: right;">
+              <video controls src="assets/loam_720K.mp4" preload="true" autoplay="autoplay" class="figure"></video>
+              <br>
+              <em class="caption">dynamic at 720K</em>
+            </div>
+          </section>
+          <section>
+            <h3 style="text-transform: none;">$\alpha$-Superionicity</h3>
+            <div style="float: left;">
+              <img  style="height: 35vh;" src="assets/transition_p.png" class="figure"/>
+              <br>
+              <em class="caption">diffusion of the Hydrogen</em>
+            </div>
+            <div style="float: left;">
+              <img style="height: 35vh;" src="assets/prot_jump.jpg" class="figure"/>
+              <br>
+              <em class="caption">Proton jumping</em>
+            </div>
+            <div style="float: left;">
+              <video controls style="height: 40vh;" src="assets/dyn_1000K.mp4" preload="true" autoplay="autoplay" class="figure"></video>
+              <br>
+              <em class="caption">dynamic at 1000K</em>
+            </div>
+          </section>
+        </section>
+        <section>
+ 				  <section data-background-video="assets/bg.mp4" data-background-video-loop data-background-video-muted>
+            <div class="bbox">
+              <h1>Conclusion</h1>
+            </div>
+          </section>
+        </section>
+			</div>
+		</div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/math/math.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+        slideNumber: "h.v",
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealNotes, RevealSearch, RevealMath.KaTeX, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+  </body>
+</html>
